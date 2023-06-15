@@ -101,6 +101,26 @@ body {
     top: -20px;
 
 }
+form {
+    display: flex;
+    column-width : 67px;
+    column-count : 2;
+
+}
+
+.label {
+    color: rgb(73, 41, 114);
+}
+
+input {
+    color: rgb(73, 41, 114);
+    background-color: rgb(255, 255, 255);
+}
+
+input[type=submit]:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(73, 41, 114);
+}
 
 
 /*footer*/
