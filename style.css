@@ -5,6 +5,7 @@ body {
     margin: 0px;
 
 }
+
 /* header*/
 .headerstyle {
     background-color: rgb(73, 41, 114);
@@ -101,26 +102,19 @@ body {
     top: -20px;
 
 }
-form {
-    display: inline-block;
-    column-width : 67px;
-    column-count : 2;
 
+.mainformulaire {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.label {
-    color: rgb(73, 41, 114);
+.formulaire {
+    flex-basis: 50%;
 }
 
-input {
-    color: rgb(73, 41, 114);
-    background-color: rgb(255, 255, 255);
-}
 
-input[type=submit]:hover {
-    color: rgb(255, 255, 255);
-    background-color: rgb(73, 41, 114);
-}
+
+
 
 
 /*footer*/
@@ -146,7 +140,8 @@ input[type=submit]:hover {
     margin-left: 10px;
 
 }
-a{
-    text-decoration:underline;
-    color:#ffffff;
-    }
+
+a {
+    text-decoration: underline;
+    color: #ffffff;
+}
