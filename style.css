@@ -102,7 +102,7 @@ body {
 
 }
 form {
-    display: flex;
+    display: inline-block;
     column-width : 67px;
     column-count : 2;
 
