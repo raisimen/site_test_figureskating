@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
         <img src="./images/logo_pattineuse.webp" class="logo" alt="pattinageartistique">
         <nav>
             <a href="index.html" class="bouton">ACCUEIL</a>
-            <a href="contact.html" class="bouton">CONTACT</a>
+            <a href="formulaire.html" class="bouton">CONTACT</a>
         </nav>
     </header>
 
@@ -29,52 +29,56 @@
 
 
                 <div class="formulaire">
-                    <label for="message">Prénom</label><br>
-                    <input class="case" type="text" name="message" placeholder="Votre Prénom" id="message">
+                    <label for="prenom">Prénom</label><br>
+                    <input class="case" type="text" name="prenom" placeholder="Votre Prénom" id="prenom">
                     <br> <br>
-                    <label for="message">Nom</label>
+                    <label for="nom">Nom</label>
                     <br>
-                    <input class="case" type="text" name="message" placeholder="Votre Nom" id="message">
+                    <input class="case" type="text" name="nom" placeholder="Votre Nom" id="nom">
                     <br><br>
-                    <label for="message">Mail</label><br>
-                    <input class="case" type="text" name="message" placeholder="Votre Mail" id="message">
+                    <label for="mail">Mail</label><br>
+                    <input class="case" type="text" name="mail" placeholder="Votre Mail" id="mail">
                     <br>
                     <br>
                     <label for="message">Vous êtes...</label><br>
                     <select name="particulier" id="choixmultiples">
-                        <option value="particulier">Un Particulier</option>
+                        <option value="particulier" selected>Un Particulier</option>
                         <option value="assos">Une association</option>
                     </select>
                     <br><br>
-                    <label for="message">Votre matériel</label><br><br>
-                    <input type="checkbox" id="materiel">
-                    <label for="terms"> Des patins à glace</label><br>
-                    <input type="checkbox" id="materiel">
-                    <label for="terms">Protège-lames</label><br>
-                    <input type="checkbox" id="materiel">
-                    <label for="terms">Gants</label>
+                    <p>Votre matériel</p>
+                    <input type="checkbox" id="patins" name="patins">
+                    <label for="patins"> Des patins à glace</label><br>
+                    <input type="checkbox" id="protege" name="protege">
+                    <label for="protege">Protège-lames</label><br>
+                    <input type="checkbox" id="gants" name="gants">
+                    <label for="gants">Gants</label>
 
                 </div>
 
                 <div class="formulaire">
 
-                    <label for="message">Disponibilités</label><br>
-                    <input class="case" type="date" name="calendar" />
+                    <label for="calendar">Disponibilités</label><br>
+                    <input class="case" type="date" name="calendar" id="calendar" />
 
                     <br> <br>
                     <label for="message">Votre message</label><br>
-                    <textarea id="story" name="story">
-Votre demande d'inscription...
-</textarea>
+                    <textarea id="message" name="message" placeholder="cgcxgcx"></textarea>
 
                     <br><br>
-                    <label for="message">Votre niveau</label><br><br>
-                    <input type="radio" id="debutant" name="niveau" value="debutant">
-                    <label for="débutant">Débutant</label><br>
-                    <input type="radio" id="inter" name="niveau" value="inter">
-                    <label for="inter">Intermédiaire</label><br>
-                    <input type="radio" id="avance" name="niveau" value="avance">
-                    <label for="Avance">Avancé</label><br>
+                    <p>Votre niveau</p>
+                    <input type="radio" id="niv1"
+                    name="niv" value="debut" checked>
+                   <label for="niv1">Débutant</label>
+               <br>
+                   <input type="radio" id="niv2"
+                    name="niv" value="inter">
+                   <label for="niv2">Intermédiaire</label>
+               <br>
+                   <input type="radio" id="niv3"
+                    name="niv" value="avance">
+                   <label for="niv3">Avancé</label>
+                    
 
                 </div>
 

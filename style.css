@@ -131,13 +131,14 @@ body {
 }
 
 input[type=submit] {
-    width: 100%;
+    width: 56%;
     color: rgb(255, 255, 255);
     background-color: rgb(73, 41, 114);
     padding: 15px;
     font-family: 'montserrat';
     border-radius: 3px;
     margin:5px;
+    width: 100%;
 }
 
 .calendar {
@@ -164,6 +165,7 @@ select {
     border: 1px solid grey;
     padding: 9px;
     margin-top: 10px;
+    box-sizing: content-box;
 }
 
 /*footer*/
