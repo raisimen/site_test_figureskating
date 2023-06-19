@@ -20,29 +20,61 @@
         </nav>
     </header>
 
-    <form method="get" action="mail.php">
-        <main>
-            <div class="backgroundimage">
+    <form method="get" action="mail.php">            <div class="backgroundimage">
                 <h1 class="presentation">Nous Contacter</h1>
             </div>
+        <main>
+
             <div class="mainformulaire">
 
 
                 <div class="formulaire">
                     <label for="message">Prénom</label><br>
-                    <input type="text" name="message" placeholder="Votre prénom" id="message">
+                    <input class="case" type="text" name="message" placeholder="Votre Prénom" id="message">
                     <br> <br>
                     <label for="message">Nom</label>
                     <br>
-                    <input type="text" name="message" placeholder="Votre Nom" id="message">
+                    <input class="case" type="text" name="message" placeholder="Votre Nom" id="message">
+                    <br><br>
+                    <label for="message">Mail</label><br>
+                    <input class="case" type="text" name="message" placeholder="Votre Mail" id="message">
+                    <br>
+                    <br>
+                    <label for="message">Vous êtes...</label><br>
+                    <select name="particulier" id="choixmultiples">
+                        <option value="particulier">Un Particulier</option>
+                        <option value="assos">Une association</option>
+                    </select>
+                    <br><br>
+                    <label for="message">Votre matériel</label><br><br>
+                    <input type="checkbox" id="materiel">
+                    <label for="terms"> Des patins à glace</label><br>
+                    <input type="checkbox" id="materiel">
+                    <label for="terms">Protège-lames</label><br>
+                    <input type="checkbox" id="materiel">
+                    <label for="terms">Gants</label>
+
                 </div>
 
                 <div class="formulaire">
-                    <label for="message">Date de l'événement</label>
-                    <input type="text" name="message" placeholder="message" id="message">
+
+                    <label for="message">Disponibilités</label><br>
+                    <input class="case" type="date" name="calendar" />
+
                     <br> <br>
-                    <label for="message">Votre message</label>
-                    <input type="text" name="message" placeholder="Votre Nom" id="message">
+                    <label for="message">Votre message</label><br>
+                    <textarea id="story" name="story">
+Votre demande d'inscription...
+</textarea>
+
+                    <br><br>
+                    <label for="message">Votre niveau</label><br><br>
+                    <input type="radio" id="debutant" name="niveau" value="debutant">
+                    <label for="débutant">Débutant</label><br>
+                    <input type="radio" id="inter" name="niveau" value="inter">
+                    <label for="inter">Intermédiaire</label><br>
+                    <input type="radio" id="avance" name="niveau" value="avance">
+                    <label for="Avance">Avancé</label><br>
 
                 </div>
 
@@ -50,7 +82,7 @@
 
 
 
-                <input type="submit" value="envoyer">
+                <input type="submit" value="Envoyer votre demande d'inscription">
 
 
             </div>
